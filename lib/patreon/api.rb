@@ -30,7 +30,7 @@ module Patreon
 
     def get_parse_json(suffix)
       json = get_json(suffix)
-      JSON.parse(json, object_class:OpenStruct)
+      JSON.parse(json)
     end
 
     def get_json(suffix)
